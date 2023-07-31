@@ -1,0 +1,13 @@
+<div class="card">
+  <img [src]="product.images[0]" class="card-img-top" alt="Product Image" />
+  <div class="card-body">
+    <h5 class="card-title">{{ product.name }}</h5>
+    <p class="card-text">{{ product.description }}</p>
+    <button class="btn btn-primary" (click)="onAddToFavorites()">
+      Aggiungi ai preferiti
+    </button>
+    <button class="btn btn-success" (click)="onAddToCart()">
+      Aggiungi al carrello
+    </button>
+  </div>
+</div>
